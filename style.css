@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Graphic;
+  src: url(./font/Graphik\ Arabic\ Medium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #111;
+  font-family: Graphic;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  position: relative;
+  width: 6rem;
+  height: 25rem;
+  border-radius: 3rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box:hover {
+  width: 25rem;
+}
+
+.text {
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 5rem;
+  left: -.5rem;
+  padding: 0.5rem;
+  width: 7rem;
+  font-size: 1.2rem;
+  color: #111;
+  background-color: #f1f1f1;
+  text-align: center;
+  transition: 0.4s ease;
+  transition-duration: 0.5s;
+  border-radius: 2rem;
+}
+
+.box:hover .text {
+  transform: rotate(0deg);
+  bottom: 2rem;
+  left: 2rem;
+}
